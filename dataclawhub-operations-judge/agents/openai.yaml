@@ -1,0 +1,4 @@
+interface:
+  display_name: "掘金评分官"
+  short_description: "评审 DataClawHub 运营方案设计，重视创新、可行性与验证闭环"
+  default_prompt: "使用 $dataclawhub-operations-judge 评审这份运营方案，并按方案可行性评分，不要求实际执行结果；检查行为—判断—数据复盘闭环并附分数图表。"
