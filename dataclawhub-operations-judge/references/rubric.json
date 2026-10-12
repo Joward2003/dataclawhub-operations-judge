@@ -1,0 +1,147 @@
+{
+  "rule_version": "dch-ops-ai-v0.3",
+  "scope": "DataClawHub 运营题初赛运营方案设计；只评方案可行性与验证闭环，不评价实际执行结果",
+  "total": 100,
+  "levels": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "general_anchors": {
+    "0": "内容缺失或该子项核心推导存在未解释的矛盾",
+    "1": "有方向或术语，缺少核心说明",
+    "2": "部分具体，仍有重要缺口或未解释假设",
+    "3": "主要要素清楚，解释与目标连贯",
+    "4": "满足前档，对关键选择有充分论证"
+  },
+  "innovation_anchors": {
+    "0": "未提出相应创新内容或价值解释",
+    "1": "主要复述常规做法，以新名称或术语包装",
+    "2": "有差异，理由、机制或平台价值仍不充分",
+    "3": "差异清楚，机制连贯，有针对性和潜在价值",
+    "4": "在前档基础上，有辨识度的机制和充分解释的优势及价值假设"
+  },
+  "dimensions": [
+    {
+      "id": "A",
+      "name": "平台理解与目标方向",
+      "max_score": 20,
+      "criteria": [
+        {
+          "id": "A1",
+          "name": "平台价值理解",
+          "max_score": 6,
+          "anchor": "general"
+        },
+        {
+          "id": "A2",
+          "name": "用户选择与需求",
+          "max_score": 6,
+          "anchor": "general"
+        },
+        {
+          "id": "A3",
+          "name": "阶段方向与目标行为",
+          "max_score": 8,
+          "anchor": "general"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "创新性与机制价值",
+      "max_score": 40,
+      "criteria": [
+        {
+          "id": "B1",
+          "name": "思路差异与创造性",
+          "max_score": 14,
+          "anchor": "innovation"
+        },
+        {
+          "id": "B2",
+          "name": "创新机制与潜在价值",
+          "max_score": 16,
+          "anchor": "innovation"
+        },
+        {
+          "id": "B3",
+          "name": "平台适配与辨识度",
+          "max_score": 10,
+          "anchor": "innovation"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "核心路径与试验设计可行性",
+      "max_score": 15,
+      "criteria": [
+        {
+          "id": "C1",
+          "name": "内容与渠道匹配",
+          "max_score": 4,
+          "anchor": "general"
+        },
+        {
+          "id": "C2",
+          "name": "核心路径与最小试验",
+          "max_score": 7,
+          "anchor": "general"
+        },
+        {
+          "id": "C3",
+          "name": "关键约束认知",
+          "max_score": 4,
+          "anchor": "general"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "数据验证闭环设计",
+      "max_score": 20,
+      "criteria": [
+        {
+          "id": "D1",
+          "name": "指标与口径",
+          "max_score": 7,
+          "anchor": "general"
+        },
+        {
+          "id": "D2",
+          "name": "数据来源与目标依据",
+          "max_score": 6,
+          "anchor": "general"
+        },
+        {
+          "id": "D3",
+          "name": "验证方法与调整规则",
+          "max_score": 7,
+          "anchor": "general"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "阶段计划与资源认知",
+      "max_score": 5,
+      "criteria": [
+        {
+          "id": "E1",
+          "name": "阶段验证安排",
+          "max_score": 3,
+          "anchor": "general"
+        },
+        {
+          "id": "E2",
+          "name": "资源与依赖认知",
+          "max_score": 2,
+          "anchor": "general"
+        }
+      ]
+    }
+  ]
+}
