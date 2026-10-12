@@ -1,0 +1,4 @@
+interface:
+  display_name: "掘金评分官"
+  short_description: "评审 DataClawHub 运营方案，突出创新并给出有证据的评分建议"
+  default_prompt: "使用 $dataclawhub-operations-judge 评审这份运营方案，并给出创新优先的评分与修改建议。"
