@@ -1,6 +1,6 @@
 # 安装与通用使用
 
-这是一个完整的 Skill 文件夹，核心为 SKILL.md 和 references，计分辅助脚本只依赖 Python 3 标准库。不依赖联网、API 密钥、付费服务、GitHub 连接器或某个产品的专属工具。文件读取及 PDF／图片识别能力由实际运行工具提供。
+这是一个完整的 Skill 文件夹，核心为 SKILL.md 和 references，计分与 SVG 图表脚本只依赖 Python 3 标准库。不依赖联网、API 密钥、付费服务、GitHub 连接器或某个产品的专属工具。文件读取及 PDF／图片识别能力由实际运行工具提供。当前规则版本为 `dch-ops-ai-v0.4`：按初赛探索方案评价，核心设计成立即可进入高档，允许细节待完善，不评真实执行结果。权重与计分公式不变，档位须按新版指导重新判断。
 
 ## 安装
 
@@ -13,9 +13,11 @@
 
 agents/openai.yaml 是可选界面元数据；其他工具不识别时可忽略，不影响规则与脚本。Windows 环境可能使用 `python`，而非 `python3`。依赖不同工具的 PDF 或图片读取能力时，应实际测试，不能承诺所有格式直接兼容。
 
+有本地文件输出能力时，先生成评分记录，再运行 `scripts/render_score_charts.py score-record.json --output-dir charts`，并在报告中引用两张 SVG。无法显示 SVG 时，按 `references/report.md` 的规定输出文字条形图和数字表。
+
 ## 调用例子
 
-“使用 dataclawhub-operations-judge 评审这份 DataClawHub 运营方案。队伍为第 3 组，提交版本 v1。本次为试评，仅输出百分制得分和修改建议，不做赛事折算。”
+“使用 dataclawhub-operations-judge 评审这份 DataClawHub 运营方案。队伍为第 3 组，提交版本 v1。本次为试评，仅按方案可行性与行为—判断—数据复盘闭环评分，不要求实际执行或增长数据；附五维柱状图和得分构成饼图。”
 
 Codex 中可使用 `$dataclawhub-operations-judge`。其他工具可以在对话中明确要求使用该名称的 Skill，具体快捷调用形式以工具为准。
 
